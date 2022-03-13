@@ -1,0 +1,52 @@
+.impact {
+    background: url('../img/six__bg.png') center center/cover no-repeat;
+    padding: 7em 0 13.25em;
+    &__top-block {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img {
+        position: relative;
+        min-width: 31.125rem;
+        max-height: 19.6rem;
+        &_inner {
+            position: absolute;
+            width: 100%;
+            // top: -50%;
+            transform: translateY(-55%);
+        }
+        &_dog {
+            border-radius: 40px;
+        }
+    }
+    &__bottom-block {
+        position: absolute;
+        bottom: calc(0px - 13.25em);
+        transform: translateY(50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.68em 4.75em 2.875em 4.375em;
+        background-color: $purple-color;
+        border-radius: 20px;
+        &_text {
+            width: 35.125rem;
+            font-weight: 900;
+            font-size: 1.5rem;
+            line-height: 1.25;
+            color: $main-color;
+        }
+    }
+    &__title {
+        width: 25.68rem;
+    }
+    &__title-mini {
+        color: $main-color;
+        &::before {
+            background-color:$main-color;
+        }
+    }
+    &__icons {
+        margin-top: 4.93rem;
+    }
+}

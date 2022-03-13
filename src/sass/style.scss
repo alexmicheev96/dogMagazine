@@ -1,0 +1,47 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+@import 'base/mixin';
+@import 'base/variables';
+@import 'blocks/header';
+@import 'blocks/navigation';
+@import 'blocks/button';
+@import 'blocks/text';
+@import 'blocks/secons-block';
+@import 'blocks/promise';
+@import 'blocks/blue-dog';
+@import 'blocks/service';
+@import 'blocks/appointment';
+@import 'blocks/form';
+@import 'blocks/gallery';
+@import 'blocks/tab';
+@import 'blocks/customers';
+@import 'blocks/impact';
+@import 'blocks/icons.scss';
+@import 'blocks/footer';
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color:$text-color;
+}
+.container, .header__container {
+    position: relative;
+    width: 63.75rem;
+    margin: 0 auto;
+}
+.hide {
+    display: none;
+}
+.active {
+    display: block;
+}
+
+@import 'blocks/media';

@@ -1,0 +1,55 @@
+.service {
+    background:url('../img/four__bg.png') center center/cover no-repeat;
+    padding: 6.875em 0;
+    position: relative;
+    &__subtitle {
+        color: black;
+    }
+    &__title-mini {
+        color: $purple-color;
+        &::before {
+            background-color:$purple-color;
+        }
+    }
+    &__items {
+        margin-top: 36px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20.25rem, 1fr));
+        gap: 1.5rem;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        padding: 3.125em 2.75em;
+        background-color: $main-color;
+        border-radius: 20px;
+        cursor: pointer;
+        &:hover {
+            transition: 1s all;
+            filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
+        }
+    }
+    &__img {
+        width: 63px;
+        margin: 0 auto;
+    }
+    &__icon {
+        width: 100%;
+    }
+    &__title {
+        font-weight: 900;
+        font-size: 1.1875;
+        margin-top: 1.73em;
+        line-height: 1.36;
+        text-align: center;
+        color: $second-color;
+    }
+    &__text {
+        font-size: 1rem;
+        margin-top: 1.25em;
+        line-height: 1.5;
+        letter-spacing: 0.15px;
+        color: #4B4B4B;
+        text-align: center;
+    }
+}

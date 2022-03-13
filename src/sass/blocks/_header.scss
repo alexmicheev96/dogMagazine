@@ -1,0 +1,26 @@
+.header {
+    background: url('../img/main__bg.png') center center/cover no-repeat;
+    // min-height: 800px;
+    min-height: 100vh;
+    max-width: 100%;
+    
+    &__title {
+        max-width: 36rem;
+        margin-top: 12%;
+    }
+    &__button {
+        margin-top: 4%;
+    }
+    &__container {
+        padding: 2.5% ;
+        // overflow: hidden;
+        &::after {
+            content: url('../img/point__bg.png');
+            position: absolute;
+            right: -6%;
+            bottom: -30%;
+            width: 20%;
+            z-index: 5;
+        }
+    }
+}

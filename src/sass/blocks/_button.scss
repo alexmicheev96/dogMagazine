@@ -1,0 +1,47 @@
+.button {
+    position: relative;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 2;
+    padding: 0.75em 2.5em;
+    letter-spacing: 0.15px;
+    text-transform: uppercase;
+    color: $main-color;
+    background-color: $second-color;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        transform: translateY(-50%);
+        width: 0;
+        height: 100%;
+        transition: 1s all;
+        background: linear-gradient(112deg,transparent 18px,#ffc533 0) top left;
+    }
+    &:hover {
+        &::after {
+            content: url('../icons/arrow_button.svg');
+            display: flex;
+            align-items:center;
+            justify-content: space-around ;
+            height: 100%;
+            width: 20%;
+        }
+    }
+    &_mini {
+        display: block;
+        margin: 0 auto;
+        margin-top: 5.5em;
+        cursor: pointer;
+        &:hover {
+            &::after {
+            content: '';
+            width: 30%;
+            }
+        }
+    }
+}

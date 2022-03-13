@@ -1,0 +1,44 @@
+.promise {
+    min-height: 308px;
+    padding: 12em 0 7.625em;
+    min-height: 500px;
+    &__title {
+        color: #5D62B5;
+        &::before {
+            background-color:#5D62B5;
+        }
+    }
+    &__subtitle {
+        color: #000000;
+    }
+    &__items {
+       margin-top: 4.375em; 
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(20.25rem, 1fr));
+       gap: 1.5rem;
+    }
+    &__item {
+        display: flex;
+        padding: 3px 4px;
+        gap: 1.4rem;
+    }
+    &__icon {
+        flex: 0 0 56px;
+    }
+    &__img {
+        width: 100%;
+    }
+    &__card-title {
+        font-weight: 900;
+        font-size: 1.18rem;
+        line-height: 1.36;
+        color: $second-color;
+    }
+    &__text {
+        font-size: 1rem;
+        margin-top: 1.25em;
+        line-height: 1.5;
+        letter-spacing: 0.15px;
+        color: #4B4B4B;
+    }
+}

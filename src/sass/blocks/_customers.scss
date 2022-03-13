@@ -1,0 +1,57 @@
+.customers {
+    display: block;
+    margin-top: 9.5em;
+    min-height: 340px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(18.25rem, 1fr));
+        gap: 24px;
+    }
+    &__title-mini {
+        color: $purple-color;
+        &::before {
+            background-color:$purple-color;
+        }
+    }
+    &__subtitle {
+        color: black;
+    }
+    &__card {
+        background: $main-color;
+        border-radius: 20px;
+        padding: 3.125em 2.75em 2.5em;
+        font-size: 1rem;
+        cursor: pointer;
+        &:hover {
+            transition: 1s all;
+            filter: drop-shadow(0 8px 16px rgba(38, 38, 38, .24)) drop-shadow(0 16px 24px rgba(38, 38, 38, .2));
+        }
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.5;
+        letter-spacing: 0.15px;
+        color: #4B4B4B;
+    }
+    &__card-inner {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-top: 18px;
+    }
+    &__img {
+        display: block;
+        margin-right: 17px;
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+    }
+    &__name {
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.5;
+        letter-spacing: 0.15px;
+        color: #F2726F;
+    }
+}

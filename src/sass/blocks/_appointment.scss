@@ -1,0 +1,49 @@
+.appointment {
+    background: url('../img/form__bg.png') center center/cover no-repeat;
+    padding: 8.68em 0 13.125em 0;
+    &__wrapper {
+        display: flex;
+        align-items: baseline;
+    }
+    &__subtitle {
+        margin-top: 0;
+    }
+    &__form {
+        font-size: 16px;
+        max-width: 36.5rem;
+        min-height: 40rem;
+        background: $purple-color;
+        border-radius: 40px;
+        padding: 4.75em 3.56em;
+    }
+    &__right-text {
+        position: absolute;
+        right: 0;
+        top: 11rem;
+        max-width: 20.25rem;
+        min-height: 17.5rem;
+    }
+    &__descr {
+        font-weight: 900;
+        font-size: 1.875rem;
+        line-height: 1.2;
+        text-align: center;
+        color: $main-color;
+    }
+    &__number {
+        font-weight: 900;
+        margin-top: 0.5em;
+        font-size: 6rem;
+        line-height: 0.62;
+        text-align: center;
+        color: $main-color;
+    }
+    &__text {
+        font-weight: 900;
+        font-size: 1.1875;
+        margin-top: 2.875em;
+        line-height: 1.36;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}

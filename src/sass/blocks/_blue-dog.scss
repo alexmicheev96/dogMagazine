@@ -1,0 +1,28 @@
+.blue-dog {
+    background: url('../img/third__bg.png') center center/cover no-repeat;
+    min-height: 31.25rem;
+    padding: 7rem 0 10.56em;
+    &__wrapper {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__inner {
+        max-width: 40%;
+    }
+    &__subtitle {
+        margin-top: 0;
+    }
+    &__button {
+        margin-top: 3.5em;
+    }
+    &__dog-pup {
+        position: absolute;
+        width: 46.5rem;
+        left: -17%;
+        top: -68px;
+    }
+    &__img {
+        width: 100%;
+    }
+}
