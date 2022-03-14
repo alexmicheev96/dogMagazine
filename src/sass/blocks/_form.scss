@@ -27,9 +27,19 @@
         border-radius: 10px;
         opacity: 0.8;
         outline: none;
+        &_select {
+            position: relative;
+            color: $main-color;
+            opacity: 0.8;
+        }
+        &_item {
+            font-size: 12px;
+            text-transform: uppercase;
+            cursor: pointer;
+            }
         &::placeholder {
             color: $main-color;
             opacity: 0.8;
         }
-    }
+    }    
 }

@@ -420,12 +420,35 @@
     .nav-menu {
         &__list {
             width: 50%;
-            align-items: flex-start;
+            align-items: flex-start; 
         }
+        &__link_arrow {
+            &:hover {
+                &::after {
+                    top: 0px;
+                }
+            }
+        }
+        &__sub-link {
+            font-size: 1.1rem;
+        }  
+        
     }
     .header {
+        &__title {
+            font-size: 3.5rem;
+        }
         &__button {
             margin-top: 10%;
+            font-size: 15px;
+        }
+    }
+    .top-block {
+        &__left {
+            max-width: 15.25rem;
+            &_img {
+                width: 100%;
+            }
         }
     }
     .second-block {
@@ -544,18 +567,29 @@
     .footer {
         padding: 0em 0 4em;
         &__information {
-            grid-template-columns: repeat(auto-fit,minmax(10.6rem,1fr));
-            gap: 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        &__inner {
+            gap: 50px;
+        }
+        &__logo-link {
+            width: 50%;
+            margin: 0 auto;
+        }
+        &__text {
+            text-align: center;
         }
         &__style-text {
-            font-size: 0.6em;
+            font-size: 1em;
+            // text-align: center;
         }
-        &__contact {
-            grid-column: 2/3;
-        }
-        &__links {
-            grid-row: 2/3;
-            grid-column: 1/3;
+        &__social-links {
+            width: 40%;
+            margin: 0 auto;
+            margin-top: 2em;
         }
     }
     .privacy {

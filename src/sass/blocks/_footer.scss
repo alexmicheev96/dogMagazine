@@ -10,6 +10,9 @@
         grid-template-columns: repeat(auto-fit, minmax(14.6rem, 1fr));
         gap: 8em;
     }
+    &__logo-link {
+        display: block;
+    }
     &__style-text {
         font-weight: 400;
         font-size: 0.875rem;
@@ -39,8 +42,10 @@
         text-decoration: none;
         color: $second-color;
         &:hover  {
+            background-color: $second-color;
+            border-radius: 50%;
             transition: 1s all;
-            color: $purple-color;
+            color: $main-color;
             text-decoration: none;
         }
     }
@@ -54,14 +59,8 @@
     }
     &__item {
         list-style-type: none;
-        cursor: pointer;
         &:nth-child(n + 2) {
             margin-top: 11px;
-        }
-        &:hover {
-            color: $second-color;
-            transition: 0.5s all;
-            text-decoration: underline;
         }
     }
     &__content-items  {
@@ -98,6 +97,16 @@
             }
         }
     }
+    &__content-link {
+        color: inherit;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover {
+            transition: 1s all;
+            text-decoration: underline;
+            color: $second-color;
+        }
+    }
 }
 .privacy {
     position: absolute;
@@ -119,7 +128,11 @@
     &__text {
         font-weight: 700;
         cursor: pointer;
+        text-decoration: none;
+        color: $main-color;
         &:hover {
+            transition: 1s all;
+            color: $second-color;
             text-decoration: underline;
         }
     }

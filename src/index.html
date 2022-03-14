@@ -271,7 +271,13 @@
                                     <input class="form__input" placeholder="Name" name="name"  type="text" required>
                                 <input class="form__input" placeholder="Email" name="email" type="email" required>
                                 <input class="form__input" placeholder="Phone Number" name="phone" type="tel" required>
-                                <input class="form__input" placeholder="Select Service" name="select"  type="text" required>
+                                <select class="form__input form__input_select" required="required" >
+                                    <option class="form__input_item" value="">Select Service</option>
+                                    <option class="form__input_item" value="1">haircut</option>
+                                    <option class="form__input_item" value="2">washing</option>
+                                    <option class="form__input_item" value="3">stroll</option>
+                                    <option class="form__input_item" value="4">cleaning</option>
+                                  </select>
                                 <textarea class="form__input form__text" placeholder="Tell us about your puppers include his/her name" name="Tell" 
                                 ></textarea>
                                 </div>
@@ -446,7 +452,10 @@
         <div class="container">
             <div class="footer__information">
                 <div class="footer__logo">
-                    <img src="icons/footer/logo__footer.svg" alt="logo-footer" class="footer__logo">
+                    <a href="#" class="footer__logo-link">
+                        <img src="icons/footer/logo__footer.svg" alt="logo-footer" class="footer__logo">
+                    </a>
+                    
                     <div class="footer__text footer__style-text">
                         This is a blurb about the company sed do eiusmod tempor incididunt ut labore et dolore ex magna aliqua. 
                     </div>
@@ -471,20 +480,24 @@
                     </div>
                     <div class="footer__inner">
                         <ul class="footer__items footer__style-text">
-                            <li class="footer__item">About</li>
-                            <li class="footer__item">Services</li>
-                            <li class="footer__item">Specials</li>
-                            <li class="footer__item">Estimates</li>
+                            <li class="footer__item"><a href="#" class="footer__content-link">About</a>
+                            </li>
+                            <li class="footer__item"><a href="#" class="footer__content-link">Services</a>
+                            </li>
+                            <li class="footer__item"><a href="#" class="footer__content-link">Specials</a>
+                            </li>
+                            <li class="footer__item"><a href="#" class="footer__content-link">Estimates</a>
+                            </li>
                         </ul>
                         <ul class="footer__items footer__style-text">
-                            <li class="footer__item">Reviews</li>
-                            <li class="footer__item">Shop</li>
-                            <li class="footer__item">Careers</li>
-                            <li class="footer__item">FAQs</li>
+                            <li class="footer__item"><a href="#" class="footer__content-link">Reviews</a></li>
+                            <li class="footer__item"><a href="#" class="footer__content-link">Shop</a></li>
+                            <li class="footer__item"><a href="#" class="footer__content-link">Careers</a></li>
+                            <li class="footer__item"><a href="#" class="footer__content-link">FAQs</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="footer__contact">
+                <address class="footer__contact">
                     <div class="footer__subtitle footer__style-text">
                         CONTACT
                     </div>
@@ -492,14 +505,15 @@
                         <li class="footer__content-item footer__content-item_1">321 Pikes Place Parkway
                             Seattle, WA 54321</li>
                         <li class="footer__content-item footer__content-item_2">
-                            (555) 765-4321
+                            <a href="tel:5557654321" class="footer__content-link">(555) 765-4321</a> 
                         </li>
-                        <li class="footer__content-item footer__content-item_3">Info@company.com</li>
+                        <li class="footer__content-item footer__content-item_3"> 
+                            <a href="href=mailto:Info@company.com" class="footer__content-link">Info@company.com</a></li>
                         <li class="footer__content-item footer__content-item_4">
                             Mon - Sat:  7:000 am - 6:00 pm
                         </li>
                     </ul>
-                </div>
+                </address>
             </div>
         </div>
         <div class="privacy">
@@ -509,9 +523,9 @@
                     Tagline lorem ipsum dolor sit amet, consectetur adipiscing eiusmod
                     </div>
                     <div class="privacy__inner privacy__style">
-                        &copy 2018 Company.
-                        <span class="privacy__text">Privacy Policy</span> | 
-                        <span class="privacy__text">Terms & Conditions</span> 
+                            <a href="#" class="privacy__text">&copy 2018 Company.</a> 
+                            <a href="policy.html" class="privacy__text">Privacy Policy</a> |
+                        <a href="#" class="privacy__text">Terms & Conditions</a> 
                     </div>
                 </div>
             </div>
